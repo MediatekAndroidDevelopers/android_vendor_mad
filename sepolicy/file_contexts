@@ -84,7 +84,6 @@
 /dev/stpwmt(/.*)?                                               u:object_r:stpwmt_device:s0
 /dev/wmtdetect                                                  u:object_r:wmtdetect_device:s0
 /dev/ttyC0                                                      u:object_r:gsm0710muxd_device:s0
-/dev/ttyC1                                                      u:object_r:mdlog_device:s0
 /dev/radio(/.*)?                                                u:object_r:radio_device:s0
 /dev/fm                                                         u:object_r:fm_device:s0
 /dev/Vcodec                                                     u:object_r:Vcodec_device:s0
@@ -161,8 +160,6 @@
 /data/misc/mnl_nlp.dat                                          u:object_r:mnld_data_file:s0
 /data/misc/mblog(/.*)?                                          u:object_r:logmisc_data_file:s0
 /data/log_temp(/.*)?                                            u:object_r:logmisc_data_file:s0
-/data/mdlog(/.*)?                                               u:object_r:mdlog_data_file:s0
-/data/mdl(/.*)?                                                 u:object_r:mdlog_data_file:s0
 /data/ccci_cfg(/.*)?                                            u:object_r:ccci_cfg_file:s0
 /data/.tp(/.*)?                                                 u:object_r:thermal_manager_data_file:s0
 /data/nfc_socket(/.*)?                                          u:object_r:nfc_socket:s0

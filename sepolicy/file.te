@@ -8,7 +8,6 @@ type agpsd_data_file, file_type, data_file_type;
 type mnld_data_file, file_type, data_file_type;
 type ccci_cfg_file, file_type, data_file_type;
 type logmisc_data_file, file_type, data_file_type;
-type mdlog_data_file, file_type, data_file_type;
 type thermal_manager_data_file, file_type, data_file_type;
 
 type sysfs_gps_file, fs_type, sysfs_type;
