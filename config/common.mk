@@ -57,6 +57,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.power@1.0-impl
 
+# VibratorHAL
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator@1.0-impl \
+    android.hardware.vibrator@1.0-service
+
 # GPS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0-impl \
