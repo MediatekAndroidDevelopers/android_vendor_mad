@@ -184,3 +184,6 @@ include vendor/mad/config/media.mk
 include vendor/mad/config/wifi.mk
 include vendor/mad/config/telephony.mk
 include vendor/mad/config/google_override.mk
+
+# DEBUG_BOOT
+include vendor/mad/config/debug_boot.mk

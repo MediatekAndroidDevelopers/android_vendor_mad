@@ -1,0 +1,49 @@
+#!/sbin/busybox sh
+
+BB=/sbin/busybox
+
+cd /
+
+$BB date >>boot.txt
+exec >>boot.txt 2>&1
+
+$BB echo "generating mount directories..."
+$BB mkdir proc
+$BB mkdir sys
+$BB mkdir system
+
+$BB mkdir /dev
+$BB mkdir /dev/block
+$BB mkdir /data
+
+$BB mkdir /mnt
+$BB chmod 755 /mnt
+$BB mkdir /tmp
+
+$BB echo "generating device nodes..."
+
+$BB mknod /dev/block/mmcblk0 b 179 0
+
+$BB echo "mounting..."
+$BB mount -t tmpfs tmpfs /tmp
+$BB mount -t proc proc /proc
+
+$BB echo "trying to mount system as ext4:"
+$BB chmod 750 /mount_fs
+./mount_fs
+
+$BB rm /dev/null
+$BB mknod /dev/null c 1 3
+$BB chmod 777 /dev/null
+
+$BB chmod 750 /log-kmsg.sh
+./log-kmsg.sh &
+
+#$BB chmod 750 /log-logcat.sh
+#./log-logcat.sh &
+
+$BB cp /boot.txt /system/boot.txt
+
+$BB chmod 750 /init_orig
+$BB mv /init_orig /init
+exec /init
