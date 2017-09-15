@@ -71,7 +71,7 @@
     </string-array>
 
     <string-array name="config_tether_wifi_regexs">
-        <item>ap\\d</item>
+        <item>wlan\\d</item>
     </string-array>
 
     <string-array translatable="false" name="config_tether_bluetooth_regexs">
