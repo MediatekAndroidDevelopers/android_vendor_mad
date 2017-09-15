@@ -9,6 +9,14 @@ PRODUCT_PACKAGES += \
     libtinymix \
     libtinyxml
 
+PRODUCT_PACKAGES += \
+    android.hardware.audio@2.0-impl \
+    android.hardware.audio.effect@2.0-impl \
+    android.hardware.soundtrigger@2.0-impl
+
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.0-impl
+
 PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/audio_policy_volumes.xml:/system/etc/audio_policy_volumes.xml \
     frameworks/av/services/audiopolicy/config/default_volume_tables.xml:/system/etc/default_volume_tables.xml \

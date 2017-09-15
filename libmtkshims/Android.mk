@@ -35,6 +35,18 @@ ifeq ($(TARGET_INCLUDE_UI_SYMBOLS),true)
     include $(BUILD_SHARED_LIBRARY)
 endif
 
+# gui symbols
+ifeq ($(TARGET_INCLUDE_GUI_SYMBOLS),true)
+    include $(CLEAR_VARS)
+
+    LOCAL_SRC_FILES := gui.cpp
+    LOCAL_SHARED_LIBRARIES := libgui
+    LOCAL_MODULE := libmtkshim_gui
+    LOCAL_MODULE_TAGS := optional
+
+    include $(BUILD_SHARED_LIBRARY)
+endif
+
 # omx symbols
 ifeq ($(TARGET_INCLUDE_OMX_SYMBOLS),true)
     include $(CLEAR_VARS)
