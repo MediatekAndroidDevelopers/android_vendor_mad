@@ -1,5 +1,5 @@
 type pq_exec, exec_type, file_type;
-type pq, domain, domain_deprecated;
+type pq, domain;
 
 init_daemon_domain(pq)
 
@@ -13,3 +13,5 @@ unix_socket_connect(pq, property, init)
 allow pq pq_conf_prop:property_service set;
 
 allow pq graphics_device:chr_file { open read ioctl };
+
+allow pq proc_mtk_mira:file r_file_perms;

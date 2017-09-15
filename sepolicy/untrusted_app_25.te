@@ -1,0 +1,2 @@
+# Graphics
+allow untrusted_app_25 proc_ged:file r_file_perms;

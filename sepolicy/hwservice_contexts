@@ -1,0 +1,2 @@
+vendor.mediatek.hardware.radio::IRadio                      u:object_r:mtk_hal_rild_hwservice:s0
+vendor.mediatek.hardware.radio.deprecated::IOemHook         u:object_r:mtk_hal_rild_hwservice:s0

@@ -1,0 +1,1 @@
+allow bootanim proc_ged:file r_file_perms;

@@ -1,0 +1,2 @@
+# Wifi
+allow hal_wifi_default wmtWifi_device:chr_file w_file_perms;

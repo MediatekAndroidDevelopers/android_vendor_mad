@@ -12,6 +12,10 @@ allow mediacodec proc:file { open read ioctl };
 allow mediacodec sysfs:file { open read write };
 allow mediacodec sysfs_devinfo:file { open read write };
 allow mediacodec proc_meminfo:file { open read getattr };
+allow mediacodec proc_ged:file r_file_perms;
+allow mediacodec proc_m4u:file r_file_perms;
+allow mediacodec proc_mtk_cmdq:file r_file_perms;
+allow mediacodec proc_hwcode:file r_file_perms;
 
 allow mediacodec property_socket:sock_file write;
 allow mediacodec init:unix_stream_socket connectto;

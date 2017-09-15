@@ -1,5 +1,5 @@
 type thermalloadalgo_exec, exec_type, file_type;
-type thermalloadalgo, domain, domain_deprecated;
+type thermalloadalgo, domain;
 
 init_daemon_domain(thermalloadalgo)
 

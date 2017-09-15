@@ -21,12 +21,12 @@
 /(system|system\/vendor|vendor)/bin/thermal_manager             u:object_r:thermal_manager_exec:s0
 /(system|system\/vendor|vendor)/bin/thermalloadalgod            u:object_r:thermalloadalgo_exec:s0
 /(system|system\/vendor|vendor)/bin/mtkrild                     u:object_r:ril-daemon-mtk_exec:s0
+/(system|system\/vendor|vendor)/bin/hw/rilproxy                 u:object_r:rild_exec:s0
 /(system|system\/vendor|vendor)/bin/mtkmal                      u:object_r:mtkmal_exec:s0
 /(system|system\/vendor|vendor)/bin/wifi2agps                   u:object_r:wifi2agps_exec:s0
 /(system|system\/vendor|vendor)/bin/wmt_loader                  u:object_r:wmt_loader_exec:s0
 /(system|system\/vendor|vendor)/bin/wmt_launcher                u:object_r:conn_launcher_exec:s0
 /(system|system\/vendor|vendor)/bin/em_svr                      u:object_r:em_svr_exec:s0
-/(system|system\/vendor|vendor)/bin/kpoc_charger                u:object_r:kpoc_charger_exec:s0
 /(system|system\/vendor|vendor)/bin/etsd                        u:object_r:etsd_exec:s0
 /(system|system\/vendor|vendor)/bin/ged_srv                     u:object_r:ged_srv_exec:s0
 /(system|system\/vendor|vendor)/bin/spm_loader                  u:object_r:spm_loader_exec:s0
@@ -63,6 +63,8 @@
 /dev/wmtWifi(/.*)?                                              u:object_r:wmtWifi_device:s0
 /dev/camera-isp                                                 u:object_r:camera_device:s0
 /dev/camera-fdvt                                                u:object_r:camera_device:s0
+/dev/camera-pipemgr                                             u:object_r:camera_device:s0
+/dev/camera-sysram                                              u:object_r:camera_device:s0
 /dev/kd_camera_hw                                               u:object_r:camera_device:s0
 /dev/kd_camera_flashlight                                       u:object_r:camera_device:s0
 /dev/MAINAF                                                     u:object_r:camera_device:s0
@@ -101,6 +103,9 @@
 /dev/socket/rild-mtk-ut                                         u:object_r:rild_socket:s0
 /dev/socket/rild-mtk-ut-2                                       u:object_r:rild_socket:s0
 /dev/socket/rild-oem                                            u:object_r:rild_socket:s0
+/dev/socket/mrild                                               u:object_r:rild_socket:s0
+/dev/socket/mrild[2-4]                                          u:object_r:rild_socket:s0
+/dev/socket/msap_uim_socket[1-2]                                u:object_r:rild_socket:s0
 /dev/socket/mal-mfi                                             u:object_r:mal_mfi_socket:s0
 /dev/socket/agpsd                                               u:object_r:agpsd_socket:s0
 /dev/socket/agpsd[2-3]                                          u:object_r:agpsd_socket:s0
@@ -146,6 +151,7 @@
 /sys/devices/.*/queue/scheduler                                 u:object_r:perf_control_sysfs:s0
 
 # Config/Runtime files
+/data/gps(/.*)?                                                 u:object_r:gps_data_file:s0
 /data/agps_supl(/.*)?                                           u:object_r:agpsd_data_file:s0
 /data/app/cache.dat                                             u:object_r:mnld_data_file:s0
 /data/gps_mnl(/.*)?                                             u:object_r:mnld_data_file:s0

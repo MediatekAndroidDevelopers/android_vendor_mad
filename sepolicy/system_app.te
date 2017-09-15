@@ -1,3 +1,5 @@
+allow system_app proc_ged:file r_file_perms;
+
 allow system_app fm_device:chr_file rw_file_perms;
 
 allow system_app gyro_orientation_sysfs:file rw_file_perms;

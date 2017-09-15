@@ -1,5 +1,5 @@
 type meta_tst_exec, exec_type, file_type;
-type meta_tst, domain, domain_deprecated;
+type meta_tst, domain;
 
 init_daemon_domain(meta_tst)
 

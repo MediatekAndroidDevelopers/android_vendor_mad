@@ -1,0 +1,7 @@
+add_hwservice(hal_telephony_server, mtk_hal_rild_hwservice)
+allow hal_telephony_client mtk_hal_rild_hwservice:hwservice_manager find;
+
+allow rild rild_socket:sock_file w_file_perms;
+allow rild ril-daemon-mtk:unix_stream_socket connectto;
+
+vndbinder_use(rild)

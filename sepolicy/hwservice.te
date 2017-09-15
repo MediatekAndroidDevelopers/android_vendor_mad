@@ -1,0 +1,1 @@
+type mtk_hal_rild_hwservice, hwservice_manager_type;

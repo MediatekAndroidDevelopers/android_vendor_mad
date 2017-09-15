@@ -1,3 +1,6 @@
+# Graphics
+allow platform_app proc_ged:file r_file_perms;
+
 # Fingerprint
 allow platform_app esfp0_device:chr_file rw_file_perms;
 allow platform_app esfp0_device:chr_file rw_file_perms;

@@ -1,5 +1,5 @@
 type spm_loader_exec, exec_type, file_type;
-type spm_loader, domain, domain_deprecated;
+type spm_loader, domain;
 
 init_daemon_domain(spm_loader)
 

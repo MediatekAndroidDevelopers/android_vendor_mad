@@ -1,5 +1,5 @@
 type etsd_exec, exec_type, file_type;
-type etsd, domain, domain_deprecated;
+type etsd, domain;
 
 init_daemon_domain(etsd)
 binder_use(etsd)

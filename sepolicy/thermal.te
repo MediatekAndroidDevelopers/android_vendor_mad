@@ -1,5 +1,5 @@
 type thermal_exec, exec_type, file_type;
-type thermal, domain, domain_deprecated;
+type thermal, domain;
 
 init_daemon_domain(thermal)
 

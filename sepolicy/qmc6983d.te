@@ -1,5 +1,5 @@
 type qmc6983d_exec, exec_type, file_type;
-type qmc6983d, domain, domain_deprecated;
+type qmc6983d, domain;
 
 init_daemon_domain(qmc6983d)
 

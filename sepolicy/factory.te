@@ -1,5 +1,5 @@
 type factory_exec, exec_type, file_type;
-type factory, domain, domain_deprecated;
+type factory, domain;
 
 init_daemon_domain(factory)
 net_domain(factory)

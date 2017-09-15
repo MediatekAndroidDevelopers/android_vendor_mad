@@ -1,5 +1,5 @@
 type mtkmal_exec, exec_type, file_type;
-type mtkmal, domain, domain_deprecated;
+type mtkmal, domain;
 
 init_daemon_domain(mtkmal)
 

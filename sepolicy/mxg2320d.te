@@ -1,5 +1,5 @@
 type mxg2320d_exec, exec_type, file_type;
-type mxg2320d, domain, domain_deprecated;
+type mxg2320d, domain;
 
 init_daemon_domain(mxg2320d)
 
