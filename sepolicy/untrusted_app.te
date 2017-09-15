@@ -1,5 +1,0 @@
-# Graphics
-allow untrusted_app proc_ged:file r_file_perms;
-
-# PQ
-allow untrusted_app pq_service:service_manager find;

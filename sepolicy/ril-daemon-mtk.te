@@ -27,6 +27,8 @@ allow ril-daemon-mtk ril_mux_report_case_prop:property_service set;
 allow ril-daemon-mtk ril_sim_inserted_status:property_service set;
 allow ril-daemon-mtk serialno_prop:property_service set;
 
+allowxperm ril-daemon-mtk self:udp_socket ioctl {SIOCDELRT SIOCSIFFLAGS SIOCSIFADDR SIOCKILLADDR SIOCDEVPRIVATE SIOCDEVPRIVATE_1};
+
 unix_socket_connect(ril-daemon-mtk, property, init)
 
 # Access to wake locks

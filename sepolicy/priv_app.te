@@ -1,6 +1,3 @@
-# Graphics
-allow priv_app proc_ged:file r_file_perms;
-
 # Guiext
 allow priv_app guiext-server_service:service_manager find;
 

@@ -1,0 +1,3 @@
+# Graphics
+allow appdomain proc_ged:file r_file_perms;
+allow appdomain proc_mtk_cmdq:file r_file_perms;
