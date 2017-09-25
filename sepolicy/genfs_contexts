@@ -8,5 +8,4 @@ genfscon  proc     /mtktz           u:object_r:proc_mtktz:s0
 genfscon  proc     /chip/hw_code    u:object_r:proc_hwcode:s0
 genfscon  proc     /mtk_mira        u:object_r:proc_mtk_mira:s0
 genfscon  fuseblk  /                u:object_r:fuse:s0
-genfscon  exfat    /                u:object_r:exfat:s0
-genfscon  ntfs     /                u:object_r:ntfs:s0
+genfscon  exfat    /                u:object_r:vfat:s0
