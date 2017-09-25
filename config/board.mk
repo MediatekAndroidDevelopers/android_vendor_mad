@@ -17,6 +17,9 @@ endif
 
 BOARD_EGL_CFG := vendor/mad/prebuilt/etc/egl.cfg
 
+# Vold
+TARGET_KERNEL_HAVE_EXFAT := true
+
 # Boot animation
 TARGET_BOOTANIMATION_MULTITHREAD_DECODE := true
 
