@@ -108,7 +108,6 @@ PRODUCT_PACKAGES += \
 
 # exFAT
 PRODUCT_PACKAGES += \
-    mount.exfat \
     fsck.exfat \
     mkfs.exfat
 
