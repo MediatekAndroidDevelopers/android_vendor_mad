@@ -21,5 +21,6 @@ allow nvram_daemon proinfo_device:blk_file rw_file_perms;
 
 set_prop(nvram_daemon, nvram_prop)
 set_prop(nvram_daemon, wmt_prop)
+set_prop(nvram_daemon, wifi_5g_prop)
 
 allow nvram_daemon block_device:dir search;
