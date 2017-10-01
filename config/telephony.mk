@@ -6,5 +6,4 @@ PRODUCT_COPY_FILES += \
 
 # Messaging
 PRODUCT_PACKAGES += \
-    messaging \
-    Stk
+    messaging
