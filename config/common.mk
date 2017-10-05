@@ -62,6 +62,10 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl \
     android.hardware.vibrator@1.0-service
 
+# UsbHAL
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.0-service
+
 # GPS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0-impl \
