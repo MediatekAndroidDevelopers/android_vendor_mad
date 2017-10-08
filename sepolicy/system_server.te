@@ -25,7 +25,6 @@ allow system_server smartwake_sysfs:file rw_file_perms;
 # Fingerprint
 binder_call(system_server, etsd)
 allow system_server etsd_service:service_manager find;
-allow fingerprintd etsd_service:service_manager find;
 
 # IR
 allow system_server irtx_device:chr_file rw_file_perms;
