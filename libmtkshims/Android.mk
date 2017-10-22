@@ -57,18 +57,3 @@ ifeq ($(TARGET_INCLUDE_OMX_SYMBOLS),true)
 
     include $(BUILD_SHARED_LIBRARY)
 endif
-
-# gps symbols
-ifeq ($(TARGET_INCLUDE_GPS_SYMBOLS),true)
-    include $(CLEAR_VARS)
-
-    LOCAL_SRC_FILES := \
-        agps/icu53.c \
-        agps/ssl.c
-
-    LOCAL_SHARED_LIBRARIES := libicuuc libssl
-    LOCAL_MODULE := libmtkshim_gps
-    LOCAL_PROPRIETARY_MODULE := true
-
-    include $(BUILD_SHARED_LIBRARY)
-endif
