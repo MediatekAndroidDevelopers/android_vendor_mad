@@ -9,3 +9,6 @@ allow platform_app guiext-server_service:service_manager find;
 
 # PQ
 allow platform_app pq_service:service_manager find;
+
+# Color engine
+allow platform_app overlay_service:service_manager find;
