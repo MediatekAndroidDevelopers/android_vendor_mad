@@ -1,3 +1,5 @@
 allow hal_fingerprint_default servicemanager:binder call;
 allow hal_fingerprint_default etsd:binder { call transfer };
 allow hal_fingerprint_default etsd_service:service_manager find;
+allow hal_fingerprint_default esfp0_device:chr_file rw_file_perms;
+allow hal_fingerprint_default madev0_device:chr_file rw_file_perms;
