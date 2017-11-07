@@ -40,6 +40,9 @@ type madev0_device, dev_type;
 # IR
 type irtx_device, dev_type;
 
+# Trustzone
+type tkcore_device, dev_type;
+
 # Block devices
 type proinfo_device, dev_type;
 type nvram_device, dev_type;

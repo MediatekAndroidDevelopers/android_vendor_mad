@@ -1,0 +1,9 @@
+type tkcore_exec, exec_type, file_type;
+type tkcore, domain;
+
+init_daemon_domain(tkcore)
+
+allow tkcore tkcore_device:chr_file rw_file_perms;
+allow tkcore tkcore_data_file:dir create_dir_perms;
+allow tkcore tkcore_data_file:file create_file_perms;
+allow tkcore tkcore_data_file:file { link };

@@ -30,6 +30,7 @@
 /(system|system\/vendor|vendor)/bin/etsd                        u:object_r:etsd_exec:s0
 /(system|system\/vendor|vendor)/bin/ged_srv                     u:object_r:ged_srv_exec:s0
 /(system|system\/vendor|vendor)/bin/spm_loader                  u:object_r:spm_loader_exec:s0
+/(system|system\/vendor|vendor)/bin/teed                        u:object_r:tkcore_exec:s0
 
 # exfat & ntfs
 /system/bin/mkfs\.exfat                                         u:object_r:mkfs_exec:s0
@@ -93,6 +94,7 @@
 /dev/esfp0                                                      u:object_r:esfp0_device:s0
 /dev/madev0                                                     u:object_r:madev0_device:s0
 /dev/irtx                                                       u:object_r:irtx_device:s0
+/dev/tkcoredrv                                                  u:object_r:tkcore_device:s0
 
 # Sockets
 /dev/socket/rild[2-4]                                           u:object_r:rild_socket:s0
@@ -163,3 +165,5 @@
 /data/ccci_cfg(/.*)?                                            u:object_r:ccci_cfg_file:s0
 /data/.tp(/.*)?                                                 u:object_r:thermal_manager_data_file:s0
 /data/nfc_socket(/.*)?                                          u:object_r:nfc_socket:s0
+/data/tee(/.*)?                                                 u:object_r:tkcore_data_file:s0
+/data/teec.log                                                  u:object_r:tkcore_data_file:s0
