@@ -22,5 +22,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.error.receiver.system.apps=com.google.android.gms \
     ro.setupwizard.enterprise_mode=1 \
     ro.com.android.dataroaming=false \
-    net.tethering.noprovisioning=true \
-    ro.setupwizard.rotation_locked=true
+    net.tethering.noprovisioning=true
