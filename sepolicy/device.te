@@ -23,6 +23,7 @@ type fm_device, dev_type;
 type Vcodec_device, dev_type;
 type M4U_device_device, dev_type;
 type mtk_smi_device, dev_type;
+type ebc_device, dev_type;
 
 # GPS
 type gps_device, dev_type;

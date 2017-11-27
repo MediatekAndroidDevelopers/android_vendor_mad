@@ -89,6 +89,7 @@
 /dev/fm                                                         u:object_r:fm_device:s0
 /dev/Vcodec                                                     u:object_r:Vcodec_device:s0
 /dev/M4U_device(/.*)?                                           u:object_r:M4U_device_device:s0
+/dev/ebc                                                        u:object_r:ebc_device:s0
 /dev/spm                                                        u:object_r:spm_device:s0
 /dev/mt6605                                                     u:object_r:mt6605_device:s0
 /dev/esfp0                                                      u:object_r:esfp0_device:s0
