@@ -1,4 +1,5 @@
 #include <binder/IBinder.h>
+#include <nativebase/nativebase.h>
 #include <ui/GraphicBufferMapper.h>
 #include <ui/Rect.h>
 
