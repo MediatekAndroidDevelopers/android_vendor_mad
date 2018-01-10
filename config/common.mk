@@ -147,8 +147,14 @@ PRODUCT_PACKAGES += \
     Eleven
 
 # Bootanimation
-PRODUCT_COPY_FILES += \
-    vendor/mad/prebuilt/bootanimation/bootanimation.zip:system/media/bootanimation.zip
+ifneq ($(filter 720,$(TARGET_SCREEN_WIDTH)),)
+    PRODUCT_COPY_FILES += \
+        vendor/mad/prebuilt/bootanimation/720p.zip:system/media/bootanimation.zip
+endif
+ifneq ($(filter 1080,$(TARGET_SCREEN_WIDTH)),)
+    PRODUCT_COPY_FILES += \
+        vendor/mad/prebuilt/bootanimation/1080p.zip:system/media/bootanimation.zip
+endif
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
