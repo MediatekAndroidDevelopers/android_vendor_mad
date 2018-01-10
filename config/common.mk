@@ -90,6 +90,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     madCamera
 
+# madWallpapers
+PRODUCT_PACKAGES += \
+    madWallpapers
+
 # madLauncher
 PRODUCT_PACKAGES += \
     madLauncher
