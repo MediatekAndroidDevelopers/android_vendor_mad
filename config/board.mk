@@ -79,7 +79,6 @@ BOARD_SEPOLICY_DIRS := \
     vendor/mad/sepolicy
 
 # DEXPREOPT
-ifeq ($(TARGET_BUILD_VARIANT),user)
-WITH_DEXPREOPT := true
-DONT_DEXPREOPT_PREBUILTS := true
+ifneq ($(TARGET_BUILD_VARIANT),user)
+WITH_DEXPREOPT := false
 endif
