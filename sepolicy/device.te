@@ -44,6 +44,9 @@ type irtx_device, dev_type;
 # Trustzone
 type tkcore_device, dev_type;
 
+# CMDQ
+type cmdq_device, dev_type;
+
 # Block devices
 type proinfo_device, dev_type;
 type nvram_device, dev_type;

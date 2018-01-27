@@ -10,6 +10,7 @@ allow cameraserver system_server:unix_stream_socket { read write };
 allow cameraserver camera_device:chr_file rw_file_perms;
 allow cameraserver mtk_smi_device:chr_file rw_file_perms;
 allow cameraserver devmap_device:chr_file r_file_perms;
+allow cameraserver cmdq_device:chr_file r_file_perms;
 allow cameraserver sysfs_devinfo:file rw_file_perms;
 allow cameraserver sysfs_membw:file rw_file_perms;
 allow cameraserver sysfs_boot_mode:file r_file_perms;

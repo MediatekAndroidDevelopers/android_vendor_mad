@@ -59,6 +59,7 @@
 /dev/mali.*                                                     u:object_r:gpu_device:s0
 /dev/mtk_disp.*                                                 u:object_r:graphics_device:s0
 /dev/sw_sync                                                    u:object_r:graphics_device:s0
+/dev/mtk_cmdq                                                   u:object_r:cmdq_device:s0
 /dev/stpbt(/.*)?                                                u:object_r:stpbt_device:s0
 /dev/hwmsensor(/.*)?                                            u:object_r:hwmsensor_device:s0
 /dev/wmtWifi(/.*)?                                              u:object_r:wmtWifi_device:s0

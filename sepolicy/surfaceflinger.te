@@ -3,10 +3,10 @@ allow surfaceflinger proc_m4u:file r_file_perms;
 allow surfaceflinger proc_mtk_cmdq:file r_file_perms;
 allow surfaceflinger proc_hwcode:file r_file_perms;
 
-allow surfaceflinger pq_service:service_manager find;
+allow surfaceflinger mtk_smi_device:chr_file rw_file_perms;
+allow surfaceflinger cmdq_device:chr_file r_file_perms;
 
+allow surfaceflinger pq_service:service_manager find;
 allow surfaceflinger guiext-server_service:service_manager { find add };
 
 allow surfaceflinger debug_prop:property_service set;
-
-allow surfaceflinger mtk_smi_device:chr_file rw_file_perms;
