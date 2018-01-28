@@ -12,6 +12,7 @@
 /(system|system\/vendor|vendor)/bin/qmc6983d                    u:object_r:qmc6983d_exec:s0
 /(system|system\/vendor|vendor)/bin/mxg2320d                    u:object_r:mxg2320d_exec:s0
 /(system|system\/vendor|vendor)/bin/memsicd3416x                u:object_r:memsicd3416x_exec:s0
+/(system|system\/vendor|vendor)/bin/akmd09911                   u:object_r:akmd09911_exec:s0
 /(system|system\/vendor|vendor)/bin/mtk_agpsd                   u:object_r:mtk_agpsd_exec:s0
 /(system|system\/vendor|vendor)/bin/nvram_daemon                u:object_r:nvram_daemon_exec:s0
 /(system|system\/vendor|vendor)/bin/pq                          u:object_r:pq_exec:s0

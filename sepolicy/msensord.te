@@ -8,3 +8,4 @@ allow msensord msensord_daemon_sysfs:file r_file_perms;
 set_prop(msensord, ctl_qmc6983d_prop)
 set_prop(msensord, ctl_mxg2320d_prop)
 set_prop(msensord, ctl_memsicd3416x_prop)
+set_prop(msensord, ctl_akmd09911_prop)
