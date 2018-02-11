@@ -5,6 +5,7 @@ frameworks/av
 frameworks/base
 frameworks/native
 frameworks/opt/datetimepicker
+frameworks/opt/net/wifi
 frameworks/opt/telephony
 frameworks/support
 hardware/interfaces
