@@ -1,0 +1,9 @@
+type wmt_launcher_exec, exec_type, file_type;
+type wmt_launcher, domain;
+
+init_daemon_domain(wmt_launcher)
+
+allow wmt_launcher stpwmt_device:chr_file rw_file_perms;
+allow wmt_launcher vendor_file:dir r_dir_perms;
+
+set_prop(wmt_launcher, wmt_prop)

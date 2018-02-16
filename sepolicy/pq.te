@@ -4,12 +4,11 @@ type pq, domain;
 init_daemon_domain(pq)
 
 binder_use(pq)
-binder_call(pq, binderservicedomain)
+binder_call(pq, surfaceflinger)
 binder_service(pq)
 
 allow pq pq_service:service_manager add;
-set_prop(pq, pq_conf_prop)
-
-allow pq graphics_device:chr_file { open read ioctl };
-
+allow pq graphics_device:chr_file r_file_perms;
 allow pq proc_mtk_mira:file r_file_perms;
+
+set_prop(pq, pq_conf_prop)

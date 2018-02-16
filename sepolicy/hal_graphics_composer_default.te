@@ -1,7 +1,9 @@
 vndbinder_use(hal_graphics_composer_default)
 
+allow hal_graphics_composer_default sysfs_boot_mode:file r_file_perms;
+
 allow hal_graphics_composer_default proc_ged:file r_file_perms;
 allow hal_graphics_composer_default proc_m4u:file r_file_perms;
 allow hal_graphics_composer_default proc_mtk_cmdq:file r_file_perms;
 
-allow hal_graphics_composer_default self:netlink_kobject_uevent_socket { read bind create setopt };
+set_prop(hal_graphics_composer_default, pq_conf_prop)

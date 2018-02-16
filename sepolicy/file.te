@@ -1,39 +1,40 @@
 type protect_s_data_file, file_type, data_file_type;
 type protect_f_data_file, file_type, data_file_type;
-
 type nvdata_file, file_type, data_file_type;
 
 type gps_data_file, file_type, data_file_type;
 type agpsd_data_file, file_type, data_file_type;
 type mnld_data_file, file_type, data_file_type;
 type ccci_cfg_file, file_type, data_file_type;
-type logmisc_data_file, file_type, data_file_type;
 type thermal_manager_data_file, file_type, data_file_type;
 type tkcore_data_file, file_type, data_file_type;
+type tkcore_log_data_file, file_type, data_file_type;
 
 type sysfs_gps_file, fs_type, sysfs_type;
 type sysfs_ccci, fs_type, sysfs_type;
 type sysfs_devinfo, fs_type, sysfs_type;
 type sysfs_membw, fs_type, sysfs_type;
-type sysfs_boot_mode, fs_type, sysfs_type;
 type sysfs_ddr_type, fs_type, sysfs_type;
-
-type msensord_daemon_sysfs, fs_type, sysfs_type;
-
-type display_color_sysfs, fs_type, sysfs_type;
-type gyro_orientation_sysfs, fs_type, sysfs_type;
-type fast_charge_sysfs, fs_type, sysfs_type;
-type smartwake_sysfs, fs_type, sysfs_type;
-type perf_control_sysfs, fs_type, sysfs_type;
+type sysfs_boot_mode, fs_type, sysfs_type;
+type sysfs_display_color, fs_type, sysfs_type;
+type sysfs_msensord_daemon, fs_type, sysfs_type;
+type sysfs_gyro_orientation, fs_type, sysfs_type;
+type sysfs_fast_charge, fs_type, sysfs_type;
+type sysfs_perf_control, fs_type, sysfs_type;
+type sysfs_smartwake, fs_type, sysfs_type;
+type sysfs_sensors, fs_type, sysfs_type;
+type sysfs_h2w_state, fs_type, sysfs_type;
 
 type proc_ged, fs_type;
 type proc_m4u, fs_type;
 type proc_mtk_cmdq, fs_type;
+type proc_mtk_jpeg, fs_type;
 type proc_mtkcooler, fs_type;
 type proc_mtktz, fs_type;
 type proc_thermal, fs_type;
 type proc_wmt, fs_type;
-type proc_hwcode, fs_type;
+type proc_chip_hwcode, fs_type;
+type proc_chip_swver, fs_type;
 type proc_mtk_mira, fs_type;
 
 type agpsd_socket, file_type;

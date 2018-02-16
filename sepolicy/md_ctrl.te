@@ -6,6 +6,7 @@ init_daemon_domain(md_ctrl)
 allow md_ctrl ccci_device:chr_file rw_file_perms;
 allow md_ctrl devpts:chr_file rw_file_perms;
 allow md_ctrl muxreport_exec:file rx_file_perms;
-allow md_ctrl self:capability dac_override;
+allow md_ctrl sysfs_ccci:dir search;
+allow md_ctrl sysfs_ccci:file r_file_perms;
 
-set_prop(md_ctrl,vold_encryption_type_prop);
+get_prop(md_ctrl, vold_encryption_type_prop);

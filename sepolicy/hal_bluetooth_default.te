@@ -1,0 +1,7 @@
+# BT HW node
+allow hal_bluetooth_default stpbt_device:chr_file rw_file_perms;
+
+# NVRAM
+allow hal_bluetooth_default nvdata_file:dir search;
+allow hal_bluetooth_default nvdata_file:file r_file_perms;
+allow hal_bluetooth_default nvdata_file:lnk_file r_file_perms;

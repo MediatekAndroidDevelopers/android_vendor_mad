@@ -1,2 +1,3 @@
 # Trustzone
 allow gatekeeperd tkcore_device:chr_file rw_file_perms;
+dontaudit gatekeeperd tkcore_log_data_file:file rw_file_perms;

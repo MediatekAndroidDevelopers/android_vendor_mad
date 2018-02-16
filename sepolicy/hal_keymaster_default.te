@@ -1,0 +1,4 @@
+# Trustzone
+allow hal_keymaster_default tkcore_device:chr_file rw_file_perms;
+dontaudit hal_keymaster_default tkcore_log_data_file:file rw_file_perms;
+dontaudit hal_keymaster_default system_data_file:dir rw_dir_perms;

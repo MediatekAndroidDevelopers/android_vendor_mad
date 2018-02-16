@@ -14,6 +14,5 @@ type pq_conf_prop, property_type, mtk_property_type;
 type audiohal_prop, property_type, mtk_property_type;
 type ril_mux_report_case_prop, property_type, mtk_property_type;
 type ril_msim_power_prop, property_type, mtk_property_type;
-type ril_sim_inserted_status, property_type, mtk_property_type;
 type wifi_5g_prop, property_type, mtk_property_type;
 type vold_encryption_type_prop, property_type;

@@ -1,0 +1,17 @@
+# NVRAM
+allow hal_audio_default nvdata_file:dir rw_dir_perms;
+allow hal_audio_default nvdata_file:file create_file_perms;
+allow hal_audio_default nvdata_file:lnk_file r_file_perms;
+
+# CCCI
+allow hal_audio_default ccci_device:chr_file rw_file_perms;
+
+allow hal_audio_default sysfs_boot_mode:file r_file_perms;
+allow hal_audio_default sysfs_ccci:dir search;
+allow hal_audio_default sysfs_ccci:file r_file_perms;
+allow hal_audio_default sysfs_devinfo:file r_file_perms;
+allow hal_audio_default sysfs_h2w_state:file r_file_perms;
+
+allow hal_audio_default proc_chip_swver:file r_file_perms;
+
+allow hal_audio_default servicemanager:binder call;

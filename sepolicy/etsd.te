@@ -15,5 +15,3 @@ allow etsd fingerprintd_data_file:dir rw_dir_perms;
 
 use_keystore(etsd)
 allow etsd keystore:keystore_key { add_auth };
-
-allow etsd self:capability { dac_override dac_read_search };

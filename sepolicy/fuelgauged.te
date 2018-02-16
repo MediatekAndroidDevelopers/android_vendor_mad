@@ -5,3 +5,5 @@ init_daemon_domain(fuelgauged)
 
 allow fuelgauged self:netlink_socket create_socket_perms_no_ioctl;
 allow fuelgauged kmsg_device:chr_file w_file_perms;
+
+dontaudit fuelgauged sysfs:file r_file_perms;

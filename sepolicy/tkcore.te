@@ -7,3 +7,5 @@ allow tkcore tkcore_device:chr_file rw_file_perms;
 allow tkcore tkcore_data_file:dir create_dir_perms;
 allow tkcore tkcore_data_file:file create_file_perms;
 allow tkcore tkcore_data_file:file { link };
+allow tkcore tkcore_log_data_file:file r_file_perms;
+dontaudit tkcore tkcore_log_data_file:file w_file_perms;

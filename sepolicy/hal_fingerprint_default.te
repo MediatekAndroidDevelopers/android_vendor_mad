@@ -6,3 +6,4 @@ allow hal_fingerprint_default madev0_device:chr_file rw_file_perms;
 
 # Trustzone
 allow hal_fingerprint_default tkcore_device:chr_file rw_file_perms;
+dontaudit hal_fingerprint_default tkcore_log_data_file:file rw_file_perms;

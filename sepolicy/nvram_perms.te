@@ -1,0 +1,10 @@
+type nvram_perms_exec, exec_type, file_type;
+type nvram_perms, domain;
+
+init_daemon_domain(nvram_perms)
+
+allow nvram_perms toolbox_exec:file entrypoint;
+allow nvram_perms toolbox_exec:file rx_file_perms;
+allow nvram_perms nvdata_file:dir create_dir_perms;
+allow nvram_perms nvdata_file:file create_file_perms;
+allow nvram_perms self:capability { fowner dac_override dac_read_search chown fsetid };

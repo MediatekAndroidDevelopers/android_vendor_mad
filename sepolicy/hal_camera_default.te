@@ -1,0 +1,20 @@
+vndbinder_use(hal_camera_default);
+
+# NVRAM
+allow hal_camera_default nvdata_file:dir rw_dir_perms;
+allow hal_camera_default nvdata_file:file create_file_perms;
+allow hal_camera_default nvdata_file:lnk_file r_file_perms;
+
+allow hal_camera_default mtk_smi_device:chr_file r_file_perms;
+allow hal_camera_default devmap_device:chr_file r_file_perms;
+
+allow hal_camera_default sysfs_devinfo:file r_file_perms;
+allow hal_camera_default sysfs_boot_mode:file r_file_perms;
+allow hal_camera_default sysfs_membw:file rw_file_perms;
+
+allow hal_camera_default proc_ged:file r_file_perms;
+allow hal_camera_default proc_m4u:file r_file_perms;
+allow hal_camera_default proc_mtk_cmdq:file r_file_perms;
+allow hal_camera_default proc_mtk_jpeg:file r_file_perms;
+
+allow hal_camera_default self:capability sys_nice;
