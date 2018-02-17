@@ -60,7 +60,7 @@ while read path;
     repo start ${branch_name} .
     ret=$(git pull https://android.googlesource.com/platform/$aosp_project ${ref} 2>&1)
 
-    if echo $ret | grep "CONFLICT" > /dev/null ; then
+    if echo $ret | grep "CONFLICT\|KONFLIKT" > /dev/null ; then
         echo "------@@@@@@@@@@@@@@@@@@@@";
         echo $ret;
         echo "------@@@@@@@@@@@@@@@@@@@@";
