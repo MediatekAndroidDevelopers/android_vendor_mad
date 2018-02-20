@@ -95,8 +95,10 @@
 /dev/socket/rild-mtk-ut                                         u:object_r:rild_socket:s0
 /dev/socket/rild-mtk-ut-2                                       u:object_r:rild_socket:s0
 /dev/socket/rild-oem                                            u:object_r:rild_socket:s0
+/dev/socket/rild-vsim                                           u:object_r:rild_socket:s0
+/dev/socket/rild-vsim[2-3]                                      u:object_r:rild_socket:s0
 /dev/socket/mrild                                               u:object_r:rild_socket:s0
-/dev/socket/mrild[2-4]                                          u:object_r:rild_socket:s0
+/dev/socket/mrild[2-3]                                          u:object_r:rild_socket:s0
 /dev/socket/msap_uim_socket[1-2]                                u:object_r:rild_socket:s0
 /dev/socket/mal-mfi                                             u:object_r:mal_mfi_socket:s0
 /dev/socket/agpsd                                               u:object_r:agpsd_socket:s0
