@@ -1,1 +1,2 @@
 set_prop(radio, ril_msim_power_prop)
+set_prop(radio, ril_mux_report_case_prop)
