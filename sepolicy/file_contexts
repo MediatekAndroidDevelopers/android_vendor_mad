@@ -139,6 +139,7 @@
 /sys/block/mmcblk0/queue/scheduler                              u:object_r:sysfs_perf_control:s0
 /sys/devices/virtual/misc/m_alsps_misc(/.*)?                    u:object_r:sysfs_sensors:s0
 /sys/devices/virtual/misc/m_acc_misc(/.*)?                      u:object_r:sysfs_sensors:s0
+/sys/devices/virtual/misc/m_mag_misc(/.*)?                      u:object_r:sysfs_sensors:s0
 /sys/devices/platform/leds-mt65xx/leds(/.*)?                    u:object_r:sysfs_leds:s0
 /sys/devices/virtual/switch/h2w/state                           u:object_r:sysfs_h2w_state:s0
 
