@@ -1,5 +1,6 @@
 allow mediacodec Vcodec_device:chr_file rw_file_perms;
 allow mediacodec mtk_smi_device:chr_file r_file_perms;
+allow mediacodec cmdq_device:chr_file r_file_perms;
 allow mediacodec sysfs_devinfo:file r_file_perms;
 allow mediacodec sysfs_membw:file rw_file_perms;
 allow mediacodec proc_ged:file r_file_perms;

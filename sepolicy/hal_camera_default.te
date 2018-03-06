@@ -7,6 +7,7 @@ allow hal_camera_default nvdata_file:lnk_file r_file_perms;
 
 allow hal_camera_default mtk_smi_device:chr_file r_file_perms;
 allow hal_camera_default devmap_device:chr_file r_file_perms;
+allow hal_camera_default cmdq_device:chr_file r_file_perms;
 
 allow hal_camera_default sysfs_devinfo:file r_file_perms;
 allow hal_camera_default sysfs_boot_mode:file r_file_perms;
