@@ -19,3 +19,6 @@ allow hal_camera_default proc_mtk_cmdq:file r_file_perms;
 allow hal_camera_default proc_mtk_jpeg:file r_file_perms;
 
 allow hal_camera_default self:capability sys_nice;
+
+allow hal_camera_default hal_graphics_allocator_hwservice:hwservice_manager find;
+allow hal_camera_default hal_graphics_allocator_default:binder call;
