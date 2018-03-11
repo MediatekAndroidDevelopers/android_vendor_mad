@@ -8,6 +8,7 @@ PRODUCT_PACKAGES += \
     libmtkshim_ui \
     libmtkshim_gui \
     libmtkshim_omx \
+    libmtkshim_camera \
     libmtkshim_gps
 
 # Display

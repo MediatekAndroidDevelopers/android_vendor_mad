@@ -57,3 +57,15 @@ ifeq ($(TARGET_INCLUDE_OMX_SYMBOLS),true)
 
     include $(BUILD_SHARED_LIBRARY)
 endif
+
+
+ifeq ($(TARGET_INCLUDE_CAMERA_SYMBOLS),true)
+    include $(CLEAR_VARS)
+
+    LOCAL_SRC_FILES := camera.cpp
+    LOCAL_SHARED_LIBRARIES := libdpframework
+    LOCAL_MODULE := libmtkshim_camera
+    LOCAL_PROPRIETARY_MODULE := true
+
+include $(BUILD_SHARED_LIBRARY)
+endif
