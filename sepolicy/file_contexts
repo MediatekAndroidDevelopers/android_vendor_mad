@@ -140,7 +140,7 @@
 /sys/devices/virtual/misc/m_alsps_misc(/.*)?                    u:object_r:sysfs_sensors:s0
 /sys/devices/virtual/misc/m_acc_misc(/.*)?                      u:object_r:sysfs_sensors:s0
 /sys/devices/virtual/misc/m_mag_misc(/.*)?                      u:object_r:sysfs_sensors:s0
-/sys/devices/virtual/misc/m_gyro_misc/(/.*)?                    u:object_r:sysfs_sensors:s0
+/sys/devices/virtual/misc/m_gyro_misc(/.*)?                     u:object_r:sysfs_sensors:s0
 /sys/devices/virtual/misc/hwmsensor/hwmsensordevnum             u:object_r:sysfs_sensors:s0
 
 /sys/devices/platform/leds-mt65xx/leds(/.*)?                    u:object_r:sysfs_leds:s0
