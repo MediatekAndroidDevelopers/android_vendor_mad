@@ -6,3 +6,8 @@ allow system_app sysfs_smartwake:file rw_file_perms;
 allow system_app sysfs_perf_control:file rw_file_perms;
 
 allow system_app em_svr:unix_stream_socket connectto;
+
+# NVRAM for audio settings
+allow system_app nvdata_file:dir r_dir_perms;
+allow system_app nvdata_file:file rw_file_perms;
+allow system_app nvdata_file:lnk_file r_file_perms;

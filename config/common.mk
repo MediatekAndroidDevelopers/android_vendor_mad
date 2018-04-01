@@ -143,6 +143,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libem_sensor_jni
 
+# Audio Settings
+PRODUCT_PACKAGES += \
+    libaudio_volume_jni
+
 # ThemeInterfacer
 PRODUCT_PACKAGES += \
     ThemeInterfacer
