@@ -12,6 +12,7 @@
 /(system|system\/vendor|vendor)/bin/mxg2320d                    u:object_r:mxg2320d_exec:s0
 /(system|system\/vendor|vendor)/bin/memsicd3416x                u:object_r:memsicd3416x_exec:s0
 /(system|system\/vendor|vendor)/bin/akmd09911                   u:object_r:akmd09911_exec:s0
+/(system|system\/vendor|vendor)/bin/st480d                      u:object_r:st480d_exec:s0
 /(system|system\/vendor|vendor)/bin/nvram_daemon                u:object_r:nvram_daemon_exec:s0
 /(system|system\/vendor|vendor)/bin/pq                          u:object_r:pq_exec:s0
 /(system|system\/vendor|vendor)/bin/thermal_manager             u:object_r:thermal_manager_exec:s0

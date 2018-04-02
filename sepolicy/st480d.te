@@ -1,0 +1,7 @@
+type st480d_exec, exec_type, file_type;
+type st480d, domain;
+
+init_daemon_domain(st480d)
+
+allow st480d msensor_device:chr_file rw_file_perms;
+allow st480d gsensor_device:chr_file rw_file_perms;
