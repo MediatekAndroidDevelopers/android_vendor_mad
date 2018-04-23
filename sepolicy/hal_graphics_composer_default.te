@@ -7,4 +7,8 @@ allow hal_graphics_composer_default proc_m4u:file r_file_perms;
 allow hal_graphics_composer_default proc_mtk_cmdq:file r_file_perms;
 allow hal_graphics_composer_default proc_chip_hwcode:file r_file_perms;
 
+allow hal_graphics_composer_default cmdq_device:chr_file r_file_perms;
+
+allow hal_graphics_composer_default self:netlink_kobject_uevent_socket { create bind setopt read };
+
 set_prop(hal_graphics_composer_default, pq_conf_prop)

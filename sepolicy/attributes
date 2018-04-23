@@ -1,1 +1,6 @@
 attribute mtk_property_type;
+
+# PQ
+attribute hal_pq;
+attribute hal_pq_client;
+attribute hal_pq_server;
